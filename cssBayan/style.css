@@ -19,7 +19,6 @@ body {
   padding: 1rem;
   background: orange;
   border-top: 2px solid orangered;
-  /* cursor: pointer; */
 }
 
 .accordion-item label {
@@ -57,12 +56,8 @@ body {
   transition: max-height .8s ease;
 }
 
-.content {
-  display: flex;
-  justify-content: center;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height .8s ease;
+.input {
+  display: none;
 }
 
 .input:checked + .label > .image {
@@ -73,6 +68,14 @@ body {
   max-height: 50rem;
 }
 
+.input:checked+.label > span > .icon {
+  transform: rotate(135deg);
+}
+
+.input:hover+.label > span > .icon {
+  transform: rotate(135deg);
+}
+
 .icon {
-  transform: rotate(45deg);
+  transition: .2s;
 }
