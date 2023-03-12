@@ -58,7 +58,7 @@ body {
 
 .input {
   display: none;
-}
+} 
 
 .input:checked + .label > .image {
   max-height: 50rem;
@@ -74,8 +74,14 @@ body {
 
 .input:hover+.label > span > .icon {
   transform: rotate(135deg);
+  opacity: 1;
 }
 
 .icon {
+  opacity: 0;
   transition: .2s;
+}
+
+.accordion:hover .icon {
+  opacity: 1;
 }
