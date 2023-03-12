@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600&display=swap');
+
 * {
   padding: 0;
   margin: 0;
@@ -6,16 +8,29 @@
 
 body {
   background: orange;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  color: green;
+}
+
+.label-title {
+  font-size: 22px;
+  color: darkslategray;
+}
+
+.container:hover .label-title {
+  color: green;
 }
 
 .accordion {
   margin: 2rem auto;
-  width: 50rem;
+  max-width: 50rem;
+  width: 100%;
 }
 
 .accordion-item {
   list-style: none;
-  width: 100%;
+  margin: 0 auto;
+  width: 90%;
   padding: 1rem;
   background: orange;
   border-top: 0.15rem solid orangered;
@@ -70,11 +85,20 @@ body {
 
 .input:checked+.label > span > .icon {
   transform: rotate(135deg);
+  color: green;
 }
 
 .input:hover+.label > span > .icon {
   transform: rotate(135deg);
-  opacity: 1;
+  color: green;
+}
+
+.input:checked+.label > .label-title {
+  color: green;
+}
+
+.input:hover+.label > .label-title {
+  color: green;
 }
 
 .icon {
@@ -85,3 +109,4 @@ body {
 .accordion:hover .icon {
   opacity: 1;
 }
+
