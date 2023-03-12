@@ -18,7 +18,7 @@ body {
   width: 100%;
   padding: 1rem;
   background: orange;
-  border-top: 2px solid orangered;
+  border-top: 0.15rem solid orangered;
 }
 
 .accordion-item label {
@@ -39,7 +39,7 @@ body {
 }
 
 .title {
-  margin-top: 50px;
+  margin-top: 3rem;
   text-align: center;
 }
 
