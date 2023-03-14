@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation:wght@400;600&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: orange;
+  font-family: 'Edu NSW ACT Foundation', cursive;
+  color: green;
+}
+
+.label-title {
+  color: darkslategray;
+}
+
+.accordion:hover .label-title {
+  color: green;
+}
+
+.accordion {
+  margin: 2rem auto;
+  max-width: 70rem;
+  width: 100%;
+}
+
+.accordion-item {
+  list-style: none;
+  margin: 0 auto;
+  width: 90%;
+  padding: 1rem;
+  background: orange;
+  border-top: 0.15rem solid orangered;
+}
+
+.accordion-item label {
+  padding: 1rem;
+  cursor: pointer;
+}
+
+.accordion-item label:active {
+  opacity: 0.8;
+}
+
+.accordion_item-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion_image {
+  display: flex;
+  justify-content: center;
+  max-height: 0;
+  transition: max-height .8s ease;
+}
+
+.title {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.label {
+  display: grid;
+  grid-template-columns: 1fr 1rem;
+}
+
+.image {
+  grid-column: 1/3;
+  margin: 0 auto;
+  max-height: 0;
+  transition: max-height .9s ease;
+}
+
+.input {
+  display: none;
+} 
+
+.input:checked + .label > .image {
+  max-height: 50rem;
+}
+
+.input:hover + .label > .image {
+  max-height: 50rem;
+}
+
+.input:checked+.label > span > .icon {
+  transform: rotate(135deg);
+  color: green;
+}
+
+.input:hover+.label > span > .icon {
+  transform: rotate(135deg);
+  color: green;
+}
+.input:active+.label > span > .icon {
+  color: darkslategray;
+}
+
+.input:checked+.label > .label-title {
+  color: green;
+}
+
+.input:hover+.label > .label-title {
+  color: green;
+}
+
+.input:active+.label > .label-title {
+  color: darkslategray;
+}
+
+.icon {
+  opacity: 0;
+  transition: .2s;
+}
+
+.accordion:hover .icon {
+  opacity: 1;
+}
+
+@media (min-width: 320px) {
+  .title {
+      font-size: 2rem;
+    }
+  
+    .label-title {
+      font-size: 1.2rem;
+    }
+
+    .image {
+      width: 14rem;
+    }
+
+    .icon {
+      font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 820px) {
+  .title {
+      font-size: 2.2rem;
+    }
+  
+    .label-title {
+      font-size: 1.8rem;
+    }
+  
+    .image {
+      width: 18rem;
+    }
+  
+    .icon {
+      display: flex;
+      font-size: 1.8rem;
+    }
+}
+
+
+@media (min-width: 1920px) {
+  .title {
+      font-size: 3rem;
+    }
+  
+    .label-title {
+      font-size: 3rem;
+    }
+  
+    .image {
+      width: 22rem;
+    }
+  
+    .icon {
+      font-size: 3rem;
+    }
+}
