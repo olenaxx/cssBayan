@@ -40,6 +40,10 @@ body {
   cursor: pointer;
 }
 
+.accordion-item label:active {
+  opacity: 0.8;
+}
+
 .accordion_item-header {
   display: flex;
   justify-content: space-between;
@@ -90,6 +94,9 @@ body {
   transform: rotate(135deg);
   color: green;
 }
+.input:active+.label > span > .icon {
+  color: darkslategray;
+}
 
 .input:checked+.label > .label-title {
   color: green;
@@ -97,6 +104,10 @@ body {
 
 .input:hover+.label > .label-title {
   color: green;
+}
+
+.input:active+.label > .label-title {
+  color: darkslategray;
 }
 
 .icon {
@@ -107,7 +118,6 @@ body {
 .accordion:hover .icon {
   opacity: 1;
 }
-
 
 @media (min-width: 320px) {
   .title {
